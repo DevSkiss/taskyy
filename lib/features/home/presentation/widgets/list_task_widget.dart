@@ -24,7 +24,7 @@ class ListTaskWidget extends StatelessWidget {
             ? GetLocalCompletedTasks().getTasksLocally()
             : GetLocalInCompleteTasks().getTasksLocally(),
         builder: ((context, snapshot) {
-          if (!snapshot.hasData) {
+          if (snapshot.data?.isEmpty ?? false) {
             return Center(
               child: Image.asset(Assets.images.emptyList.path),
             );
