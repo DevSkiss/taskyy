@@ -1,0 +1,86 @@
+name: my_task_manager
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.2
+  cached_network_image: ^3.2.2
+  dropdown_button2: ^1.9.2
+  animations: ^2.0.7
+  animate_do: ^3.0.2
+
+  # Architecture
+  get_it: ^7.2.0
+  flutter_bloc: ^8.1.1
+
+  # Persistence and Local Storage
+  shared_preferences: ^2.0.15
+  isar: ^3.1.0+1
+  isar_flutter_libs: ^3.1.0+1
+
+  # API, JSON and Models
+  freezed_annotation: ^2.1.0
+  dio: ^4.0.6
+  retrofit: ^3.3.1
+
+  # Navigation
+  auto_route: ^5.0.2
+
+  # Utils
+  logger: ^1.1.0
+  path: ^1.8.2
+  path_provider: ^2.0.11
+  image_picker: ^0.8.6
+  pretty_dio_logger: ^1.1.1
+  copy_with_extension: ^5.0.2
+  intl: ^0.17.0
+  http_parser: ^4.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: ^2.4.6
+  freezed: ^2.1.0
+  injectable_generator: ^1.5.4
+  auto_route_generator: ^5.0.2
+  retrofit_generator: ^4.2.0
+  flutter_gen_runner: ^5.0.3
+  copy_with_extension_gen: ^5.0.3
+  json_serializable: ^6.4.0
+  analyzer: ^5.13.0
+  isar_generator: ^3.1.0+1
+  flutter_launcher_icons: ^0.13.1
+
+flutter_gen:
+  output: lib/generated/
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/fonts/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Black.ttf
+          weight: 800
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
